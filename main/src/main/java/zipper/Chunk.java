@@ -1,16 +1,12 @@
 package zipper;
 
-import java.io.FileOutputStream;
 import java.io.FileInputStream;
-import java.io.OutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class Chunk {
 
-
-
-        
-  
 
     public static void Chunking(String CompressedFile, String InputFile, Compressor compressor)throws IOException
     { 
