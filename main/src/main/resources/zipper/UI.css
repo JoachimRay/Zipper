@@ -1,0 +1,8 @@
+.card {
+-fx-border-color: #e0e0e0;
+-fx-border-width: 1;
+-fx-border-radius: 8;
+-fx-background-radius: 8;
+-fx-background-color: white;
+-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 8, 0.5, 0, 2);
+}
