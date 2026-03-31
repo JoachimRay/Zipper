@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("UI"), 640, 480);
+        scene = new Scene(loadFXML("UI"), 640, 700);
         scene.getStylesheets().add(getClass().getResource("/zipper/UI.css").toExternalForm());
         stage.setScene(scene);
         stage.show();

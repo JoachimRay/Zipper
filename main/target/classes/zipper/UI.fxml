@@ -5,9 +5,10 @@
 <?import javafx.geometry.Insets?>
 
 <VBox alignment="CENTER" spacing="12.0"
-      xmlns="http://javafx.com/javafx/8.0.171"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="zipper.UIController">
+   xmlns="http://javafx.com/javafx/8.0.171"
+   xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="zipper.UIController"
+   style="-fx-background-color: black;">
 
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
@@ -15,7 +16,7 @@
 
    <children>
 
-      <Pane fx:id="DropFile" prefWidth="500.0" prefHeight="80.0"
+      <Pane fx:id="DropFile" prefWidth="500.0" prefHeight="200.0" minHeight="200.0" maxHeight="200.0"
             styleClass="drop-zone"/>
 
       <VBox fx:id="terminalBox" prefWidth="500.0" spacing="0.0"
