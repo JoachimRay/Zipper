@@ -4,14 +4,21 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
+import java.io.File;
 public class Chunk {
 
 
-    public static void Chunking(String CompressedFile, String InputFile, Compressor compressor, Statistics stats)throws IOException
+    public static void Chunking(String CompressedFile, String InputFile, Compressor compressor, Statistics stats, UIController controller)throws IOException
     { 
 
         stats.start(); 
+        File inputFile = new File(InputFile);
+        stats.addOriginalSize(inputFile.length());
+
+        int totalChunks = (int) Math.ceil((double) inputFile.length() / 8192);  
+
+
+
         try( FileInputStream fis = new FileInputStream(InputFile); 
             FileOutputStream fos = new FileOutputStream(CompressedFile);
             OutputStream gzipOS = compressor.getCompressedStream(fos)){ 
@@ -26,6 +33,7 @@ public class Chunk {
                 gzipOS.write(buffer, 0, len); 
                 stats.addCompressedSize(len);
                 stats.ChunkCompleted(); 
+                controller.updateProgress(stats, totalChunks, false);
             }
 
         } catch(Exception e)

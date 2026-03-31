@@ -48,14 +48,12 @@ public class Statistics {
         completedChunks.incrementAndGet(); 
     }
 
-    public double completedChunksGetter() 
-    { 
-        return(completedChunks.get());
+    public int getCompletedChunks() {
+        return completedChunks.get();
     }
 
-    public double failedChunksGetter() 
-    { 
-        return(failedChunks.get());
+    public int getFailedChunks() {
+        return failedChunks.get();
     }
 
     public void ChunkFailed() 

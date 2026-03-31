@@ -25,8 +25,8 @@ public class StatsDialog {
                 stats.SpaceSaved(),
                 stats.elapsedms(),
                 stats.getThroughPutMBPS(),
-                stats.completedChunksGetter(),
-                stats.failedChunksGetter(),
+                stats.getCompletedChunks(),
+                stats.getFailedChunks(),
                 output.getAbsolutePath()
                 ));
         alert.showAndWait();

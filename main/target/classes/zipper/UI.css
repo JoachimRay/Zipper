@@ -1,8 +1,61 @@
-.card {
--fx-border-color: #e0e0e0;
--fx-border-width: 1;
--fx-border-radius: 8;
--fx-background-radius: 8;
--fx-background-color: white;
--fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 8, 0.5, 0, 2);
+.drop-zone {
+    -fx-border-color: #333333;
+    -fx-border-width: 1px;
+    -fx-border-style: dashed;
+    -fx-border-radius: 6px;
+    -fx-background-color: transparent;
+}
+
+.term-root {
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #0d0d0d;
+}
+
+.term-bar {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-padding: 8px 14px 8px 14px;
+}
+
+.term-title {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 12px;
+    -fx-text-fill: #555555;
+}
+
+.term-body {
+    -fx-padding: 14px 18px 14px 18px;
+    -fx-background-color: #0d0d0d;
+    -fx-background-radius: 0px 0px 8px 8px;
+}
+
+.term-white {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 13px;
+    -fx-text-fill: #ffffff;
+}
+
+.term-dim {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 13px;
+    -fx-text-fill: #555555;
+}
+
+.term-green {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 13px;
+    -fx-text-fill: #4cff91;
+}
+
+.term-blue {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 13px;
+    -fx-text-fill: #5bbcff;
+}
+
+.term-yellow {
+    -fx-font-family: "Courier New";
+    -fx-font-size: 13px;
+    -fx-text-fill: #ffd966;
 }
