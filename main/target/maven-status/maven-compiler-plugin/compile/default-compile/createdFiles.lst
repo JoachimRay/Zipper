@@ -1,12 +1,8 @@
 zipper\Decompressor.class
 zipper\GZipCompressor.class
-zipper\UIController.class
 zipper\Statistics.class
 zipper\GZipDecompressor.class
 zipper\Compressor.class
-zipper\FileReader.class
 module-info.class
-zipper\Reassemble.class
 zipper\App.class
-zipper\Chunk.class
 zipper\StatsDialog.class
