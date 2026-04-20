@@ -62,7 +62,7 @@ The UI shows a terminal-style progress panel with:
 
 **Example Screenshot**
 
-Below is an example screenshot of the app's UI. To display the screenshot in the README, place an image named `screenshot.png` in the `assets` folder (created in the repository root).
+Below is an example screenshot of the app's UI. 
 
 ![Zipper UI screenshot](assets/screenshot.png)
 
